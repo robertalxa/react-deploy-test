@@ -1,17 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./deployment.png";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Olá! Este é um app React com Typescript criado por Robert para aplicar
-          o pipeline de build e deploy
-        </p>
-      </header>
+    <div className="app">
+      <section className="app__content_section">
+        <img src={logo} className="app__content_section__logo" />
+        <h1 className="app__content_section__title">App React + TS</h1>
+        <p className="app__content_section__text">App criado para testar um pipeline de deploy utilizando github actions e Vercel.</p>
+      </section>
     </div>
   );
 }
